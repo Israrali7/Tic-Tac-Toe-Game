@@ -1,22 +1,24 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-h1{
+
+h1 {
     color: #fff;
     font-size: 3rem;
 }
 
-body{
+body {
     background-color: #b2910f;
     text-align: center;
-    /* overflow-y: hidden; */
-
 }
-.hide{
+
+.hide {
     display: none;
 }
-.container{
+
+.container {
     height: 70vh;
     width: 70vmin;
     text-align: center;
@@ -24,43 +26,58 @@ body{
     justify-content: center;
     margin-bottom: 26vmin;
 }
-.box{
-    height: 20vh;
+
+.box {
+    height: 20vmin;
     width: 20vmin;
-    flex-wrap: wrap;
     padding: 1rem;
     margin-bottom: 1rem;
     margin-right: 1rem;
-    font-size: 1.25rem;
-    border: 0;
+    font-size: 2rem;
+    border: 2px solid #b2910f; /* Consistent border */
     border-radius: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    text-align: center;
+    font-family: sans-serif;
+    background-color: #fff; /* Consistent background color */
+    color: #b2910f; /* Text color that matches the design */
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
-#Reset{
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+
+.box:active {
+    transform: scale(0.95); /* Add a small scale effect on click for feedback */
+}
+
+#Reset, #new-btn {
+    padding: 0.5rem 1rem;
     font-size: x-large;
     border-radius: 0.4rem;
     margin-top: 5rem;
-    border: 0;
+    border: 2px solid #b2910f;
+    background-color: #fff;
+    color: #b2910f;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
-#new-btn{
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    font-size: x-large;
-    border-radius: 0.4rem;
-    border: 0;
+
+#Reset:hover, #new-btn:hover {
+    background-color: #b2910f;
+    color: #fff;
 }
-.msg-container{
+
+.msg-container {
     height: 90vh;
     text-align: center;
     margin-top: 27vmin;
 }
-.game{
+
+.game {
     height: 60vh;
     width: 80vmin;
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
